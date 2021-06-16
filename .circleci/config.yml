@@ -30,6 +30,10 @@ jobs:
       # - node/install-packages:
       #     pkg-manager: yarn 
       - run:
+          name: Generate environment file
+          command: |
+            echo export const environment=${ENV_OBJECT} > src/environments/environment.prod.ts
+      - run:
           name: Run Build
           command: npm run build
       - deploy:
