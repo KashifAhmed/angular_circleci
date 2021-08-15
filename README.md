@@ -1,27 +1,20 @@
-# AngularTourOfHeroes
+# Angular Project 
+    TODO:
+        - Cicle CI deployment (Done)
+        - Docker build (Done)
+        - Nginx integration serve with docker (Done)
+        - Run the project in docker environment while on development phase (Coming Soon)
+        - Integration SSR with angular universal(Coming Soon)
+        - Add angular E2E testing (Coming Soon)
+    Note: If you want me to add more feature keep add here
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.2.
+# Step to run the project within docker environment
 
-## Development server
+# Steps to make build project in docker environment
+    - Install docker in your system
+    - To make docker image run this command `docker build -t <your docker image name> .` and wait for successfully run this command
+    - After the above command the project successfully run now you need to serve the product for that use this command `docker run -d -p 8080:80 <your docker image name>`
+    - Type `localhost:8080` and your project deployed. :)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    
